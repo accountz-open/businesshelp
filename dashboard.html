@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="finance software, home accounting software, personal finance software UK, accounting software, bookkeeping software, accounts software, home finance software, business accounting	software, small	business accounting	software, submit VAT return, accounting	packages" />
+  <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
+  <meta name="description" content="Business Accounting Software The Dashboard " />
+  <title>Accountz - The Dashboard</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="css/global.css" />
+  <script>
+
+      // Element to move, time in ms to animate
+      function scrollTo(element, duration) {
+          var e = document.documentElement;
+          if(e.scrollTop===0){
+              var t = e.scrollTop;
+              ++e.scrollTop;
+              e = t+1===e.scrollTop--?e:document.body;
+          }
+          scrollToC(e, e.scrollTop, element, duration);
+      }
+
+      // Element to move, element or px from, element or px to, time in ms to animate
+      function scrollToC(element, from, to, duration) {
+          if (duration <= 0) return;
+          if(typeof from === "object")from=from.offsetTop;
+          if(typeof to === "object")to=to.offsetTop;
+
+          scrollToX(element, from, to, 0, 1/duration, 20, easeOutCuaic);
+      }
+
+      function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
+          if (t01 < 0 || t01 > 1 || speed<= 0) {
+              element.scrollTop = xTo;
+              return;
+          }
+          element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
+          t01 += speed * step;
+          
+          setTimeout(function() {
+              scrollToX(element, xFrom, xTo, t01, speed, step, motion);
+          }, step);
+      }
+
+      function easeOutCuaic(t){
+          t--;
+          return t*t*t+1;
+      }
+
+      function insertAfter(newNode, referenceNode) {
+          referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+      }
+  </script>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-84505212-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <a href="https://plus.google.com/110833302773263755599" rel="publisher"></a>
+  <main class="container content">
+        <div class="container header header--baz">
+            <div class="header-wrapper page-wrap">
+                <img src="images/banner.png" alt="Accountz logo">
+                <div class="controls-wrapper">
+                    <a href="./welcome.html" class="home-btn">
+                        <svg x="0px" y="0px" viewBox="0 0 58.365 58.365" width="24" height="24">
+                            <path d="M57.863,26.632L29.182,0L0.502,26.632c-0.404,0.376-0.428,1.009-0.052,1.414c0.374,0.404,1.009,0.427,1.413,0.052 l4.319-4.011v3.278v31h16v-18c0-3.866,3.134-7,7-7s7,3.134,7,7v18h16v-31v-3.278l4.319,4.011c0.192,0.179,0.437,0.267,0.681,0.267 c0.269,0,0.536-0.107,0.732-0.319C58.291,27.641,58.267,27.008,57.863,26.632z" fill="#FFFFFF"></path>
+                        </svg>
+                    </a>
+                    <span class="print-btn" onclick="window.print()" title="print this page">
+                        <svg viewBox="0 0 60 60" width="24" height="24">
+                            <g>
+                                <path d="M42,43H18c-0.553,0-1,0.447-1,1s0.447,1,1,1h24c0.553,0,1-0.447,1-1S42.553,43,42,43z" fill="#FFFFFF" />
+                                <path d="M42,48H18c-0.553,0-1,0.447-1,1s0.447,1,1,1h24c0.553,0,1-0.447,1-1S42.553,48,42,48z" fill="#FFFFFF" />
+                                <path d="M51,17V0H9v17H0v34h6v3h3v6h42v-6h3v-3h6V17H51z M11,2h38v15H11V2z M49,54v4H11v-4V37h38V54z M50,32c-2.757,0-5-2.243-5-5 s2.243-5,5-5s5,2.243,5,5S52.757,32,50,32z" fill="#FFFFFF" />
+                                <circle cx="50" cy="27" r="3" fill="#FFFFFF" />
+                            </g>
+                        </svg>
+                    </span>
+        	<div class="gcse-search">
+        	<form action="search.html">
+        	<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+        	</form></div>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrap">
+            <aside class="col-xs-12 col-md-4">
+                <header>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li>
+                                <input id="group-1" type="checkbox" hidden />
+                                <label for="group-1"><span class="fa fa-angle-right">➤</span>Video Help</label>
+                                <ul class="group-list">
+                                    <li>
+                                        <input id="sub-group-1" type="checkbox" hidden />
+                                        <label for="sub-group-1"><span class="fa fa-angle-right">➤</span>Getting Started</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./video_easy_steps_overview.html">Overview & Easy Steps</a></li>
+                                            <li><a href="./video_customer_records.html">Customer Records</a></li>
+                                            <li><a href="./video_chart_of_accounts.html">Chart of Accounts</a></li>
+                                            <li><a href="./video_transaction_tables.html">Transaction Tables</a></li>
+                                            <li><a href="./video_opening_balances.html">Opening Balances</a></li>
+                                            <li><a href="./video_opening_creditors_and_debtors.html">Opening Creditors and Debtors</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-2" type="checkbox" hidden />
+                                        <label for="sub-group-2"><span class="fa fa-angle-right">➤</span>Transactions</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./video_adding_a_sales_transaction.html">Adding a Sale</a></li>
+                                            <li><a href="./video_adding_a_sale_on_credit.html">Adding a Sale on Credit (Selling on Credit)</a></li>
+                                            <li><a href="./video_full_payment_for_sale_on_credit.html">Customer Full Payment for Sale on Credit</a></li>
+                                            <li><a href="./video_part_payments_for_sale_on_credit.html">Customer Part Payments for Sale on Credit</a></li>
+                                            <li><a href="./video_quotation.html">Quotation</a></li>
+                                            <li><a href="./video_converting_quotes_to_sales.html">Converting Quotes to Sales</a></li>
+                                            <li><a href="./video_reversing_a_sale.html">Reversing a Sale</a></li>
+                                            <li><a href="./video_crediting_a_customer.html">Issue Customer Credit Note</a></li>
+                                            <li><a href="./video_entering_a_purchase.html">Adding a Purchase</a></li>
+                                            <li><a href="./video_supplier_records.html">Supplier Records</a></li>
+                                            <li><a href="./video_issuing_a_purchase_order.html">Issuing a Purchase Order</a></li>
+                                            <li><a href="./video_converting_a_purchase_order_to_a_purchase.html">Converting a Purchase Order to a Purchase</a></li>
+                                            <li><a href="./video_entering_a_purchase_on_credit.html">Adding a Purchase on Credit (Buying on Credit)</a></li>
+                                            <li><a href="./video_paying_a_supplier_in_full.html">Supplier Full Payment for Purchase on Credit</a></li>
+                                            <li><a href="./video_part_paying_a_supplier.html">Supplier Part Payments for Purchase on Credit</a></li>
+                                            <li><a href="./video_entering_a_purchase_refund.html">Entering a Purchase Refund</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-3" type="checkbox" hidden />
+                                        <label for="sub-group-3"><span class="fa fa-angle-right">➤</span>Documents</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./video_template_editor_overview.html">Template Editor Overview</a></li>
+                                            <li><a href="./video_customising_invoice.html">Customising your Invoice</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-4" type="checkbox" hidden />
+                                        <label for="sub-group-4"><span class="fa fa-angle-right">➤</span>Miscellanous</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./video_views.html">Views (Table Filters)</a></li>
+                                            <li><a href="./video_reconciling_a_bank_statement.html">Reconciling Your Bank Account</a></li>
+                                            <li><a href="./video_bad_debts_write_off.html">Bad Debts Write Off</a></li>
+                                            <li><a href="./video_how_to_lock_transactions.html">How to Lock Transactions</a></li>
+                                            <li><a href="./video_show_accounts_in_the_books.html">Show Accounts in the Books</a></li>
+                                            <li><a href="./video_create_new_groups.html">Create New Account Groups (Chart of Accounts)</a></li>
+                                            <li><a href="./video_show_new_columns.html">Show or Hide Columns in a Table</a></li>
+                                            <li><a href="./video_template_transactions.html">Template Transactions</a></li>
+                                            <li><a href="./video_automated_entries.html">Automated Entries</a></li>
+                                            <li><a href="./video_stock_movement.html">Stock Movement</a></li>
+                                            <li><a href="./video_sole_trader_drawings.html">Sole Trader Drawings</a></li>
+                                            <li><a href="./video_sole_trader_drawings.html">Directors Loans</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-5" type="checkbox" hidden />
+                                        <label for="sub-group-5"><span class="fa fa-angle-right">➤</span>Reports</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./video_chart_of_accounts_reports.html">Chart of Accounts Reports (P&L, Balance Sheet, Trial Balance)</a></li>
+                                            <li><a href="./video_aged_debtors.html">Aged Debtors Report</a></li>
+                                            <li><a href="./video_aged_creditors.html">Aged Creditors Report</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-6" type="checkbox" hidden />
+                                        <label for="sub-group-6"><span class="fa fa-angle-right">➤</span>VAT Return</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./video_vat_return_component_overview.html">VAT Return Component Overview</a></li>
+                                            <li><a href="./video_vat_return_standard_accrual.html">VAT Return Standard Accrual</a></li>
+                                            <li><a href="./video_how_to_enter_flat_rate_transactions.html">How to Enter Flat Rate Transactions</a></li>
+                                            <li><a href="./video_vat_return_flat_rate.html">VAT Return Flat Rate</a></li>
+                                            <li><a href="./video_how_to_enter_cash_accounting_transactions.html">How to Enter Cash Accounting Transactions</a></li>
+                                            <li><a href="./video_vat_return_cash_accounting.html">VAT Return Cash Accounting</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-7" type="checkbox" hidden />
+                                        <label for="sub-group-7"><span class="fa fa-angle-right">➤</span>Add-ons</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./video_budgeting_and_forecasting.html">Budgeting and Forecasting</a></li>
+                                            <li><a href="./video_cost_centres.html">Cost Centres</a></li>
+                                            <li><a href="./video_product_management.html">Product Management</a></li>
+                                            <li><a href="./video_multi_currency.html">How to Use Multi-Currency</a></li>
+                                            <li><a href="./video_using_a_foreign_bank_account.html">Using a Foreign Bank Account</a></li>
+                                            <li><a href="./video_payroll_payments.html">Payroll Payments</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="group-2" type="checkbox" hidden />
+                                <label for="group-2"><span class="fa fa-angle-right">➤</span>Quick Start guide</label>
+                                <ul class="group-list">
+                                    <li><a href="./easy_steps.html">Easy Steps</a></li>
+                                    <li><a href="./dashboard.html">The Dashboard</a></li>
+                                    <li><a href="./the_accountz_philosophy.html">The Accountz Philosophy</a></li>
+                                    <li><a href="./a_quick_introduction_to_accounting.html">A Quick Introduction to Accounting</a></li>
+                                    <li><a href="./a_simple_guide_to_bookkeeping.html">A Simple Guide to Bookkeeping</a></li>
+                                    <li><a href="./document_designer_update.html">The Document Designer</a></li>
+                                    <li><a href="./online_backup.html">Accountz Online Backup and Recovery</a></li>
+                                    <li><a href="./mobile_app.html">Accountz Mobile App</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="group-3" type="checkbox" hidden />
+                                <label for="group-3"><span class="fa fa-angle-right">➤</span>How To</label>
+                                <ul class="group-list">
+                                    <li>
+                                        <input id="sub-group-8" type="checkbox" hidden />
+                                        <label for="sub-group-8"><span class="fa fa-angle-right">➤</span>Introduction</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./how_to_enter_opening_balances.html">How To Enter Opening Balances</a></li>
+                                            <li><a href="./entering_your_first_transactions.html">Entering Your First Transactions</a></li>
+                                            <li><a href="./complete_transaction_process_guide.html">Complete Transaction Process Guide</a></li>
+                                            <li><a href="./rapid_data_entry.html">Rapid Data Entry</a></li>
+                                            <li><a href="./licence_key_essentials.html">Licence Key Essentials</a></li>
+                                            <li><a href="./importing_data.html">Importing Data</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-9" type="checkbox" hidden />
+                                        <label for="sub-group-9"><span class="fa fa-angle-right">➤</span>Documents</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./creating_and_customising_documents.html">Creating and Customising Documents</a></li>
+                                            <li><a href="./how_to_create_a_landscape_invoice_design.html">How To Create A Landscape Invoice Design</a></li>
+                                            <li><a href="./how_to_format_a_table_on_an_invoice_quote_credit_note_purchase_order.html">How to format a table on an Invoice-Quote-Credit Note-Purchase Order</a></li>
+                                            <li><a href="./how_to_add_a_custom_field.html">How to add a Custom Field to a Document Template</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-10" type="checkbox" hidden />
+                                        <label for="sub-group-10"><span class="fa fa-angle-right">➤</span>Reports</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./views.html">Views</a></li>
+                                            <li><a href="./creating_and_customising_views.html">Creating and Customising Views</a></li>
+                                            <li><a href="./how_to_print_a_report_for_transactions_up_to_a_certain_date.html">How to print a report for transactions up to a certain date</a></li>
+                                            <li><a href="./create_a_report_with_brought_forward_balances.html">Create a Report (Nominal Ledger, Bank Account) with Consolidated Brought Forward Balances</a></li>
+                                            <li><a href="./nominal_ledger_report.html">Nominal Ledger Report</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-11" type="checkbox" hidden />
+                                        <label for="sub-group-11"><span class="fa fa-angle-right">➤</span>General</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./how_to_sort_transactions_in_date_order.html">How to sort transactions in date order</a></li>
+                                            <li><a href="./how_to_create_new_accounts_and_account_groups.html">How to create New Accounts and Account Groups</a></li>
+                                            <li><a href="./how_to_refund_a_customer.html">How To Refund A Customer</a></li>
+                                            <li><a href="./how_to_lock_and_unlock_transactions.html">How To Lock and Unlock Transactions</a></li>
+                                            <li><a href="./create_a_template_transfer.html">Create a Template Transfer</a></li>
+                                            <li><a href="./create_a_template_sale.html">Create a Template Sale</a></li>
+                                            <li><a href="./create_a_template_purchase.html">Create a Template Purchase</a></li>
+                                            <li><a href="../refund_yourself.html">How to pay yourself back/refund yourself</a></li>
+                                            <li><a href="./how_to_create_remittance_advice.html">How to create Remittance Advice</a></li>
+                                            <li><a href="./how_to_use_multi_currency.html">How to use Multi Currency</a></li>
+                                            <li><a href="./how_to_enter_negative_figures_in_business_accountz.html">How to enter negative figures</a></li>
+                                            <li><a href="./accounting_for_investments_stocks_and_shares.html">Accounting for Investments - Stocks and Shares</a></li>
+                                            <li><a href="./client_accounts.html">Client Accounts</a></li>
+                                            <li><a href="./how_to_set_or_re_set_your_business_start_date.html">How to set or re-set your business start date</a></li>
+                                            <li><a href="./year_ends_and_continuing_into_a_new_year.html">Year Ends and continuing into a New Year</a></li>
+                                            <li><a href="./deposit_paid_for_by_third_party.html">Deposit paid for by third party</a></li>
+                                            <li><a href="./tax_deducted_at_source.html">Tax Deducted at Source</a></li>
+                                            <li><a href="./tax_for_the_self_employed.html">Tax for the Self-Employed</a></li>
+                                            <li><a href="./factoring.html">Factoring</a></li>
+                                            <li><a href="./how_to_account_for_dead_stock.html">How to account for dead stock</a></li>
+                                            <li><a href="./cis_construction_industry_scheme.html">CIS Construction Industry Scheme</a></li>
+                                            <li><a href="./cis_reverse_charge_notes.html">CIS Reverse charge notes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-12" type="checkbox" hidden />
+                                        <label for="sub-group-12"><span class="fa fa-angle-right">➤</span>Technical & Data</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./business_accountz_won_t_start.html">Business Accountz won't start</a></li>
+                                            <li><a href="./how_to_create_your_own_shortcuts_in_business_accountz.html">How to create your own shortcuts in Business Accountz</a></li>
+                                            <li><a href="./how_to_restore_your_data_after_re_installation.html">How to restore your data after re-installation</a></li>
+                                            <li><a href="./setting_a_different_backup_path.html">Setting a different backup path</a></li>
+                                            <li><a href="./how_to_make_a_backup_on_a_memory_stick.html">How to Make a Backup on a Memory Stick</a></li>
+                                            <li><a href="./how_to_restore_a_backup_from_bak.html">How to Restore a Backup from the BAK folder</a></li>
+                                            <li><a href="./how_to_restore_a_backup_from_memory_stick.html">How to Restore a Backup from a Memory Stick</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-13" type="checkbox" hidden />
+                                        <label for="sub-group-13"><span class="fa fa-angle-right">➤</span>VAT</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./making_tax_digital.html">Making Tax Digital</a></li>
+                                            <li><a href="./what_to_do_if_you_become_vat_registered.html">What to do if you become VAT registered</a></li>
+                                            <li><a href="./switching_from_vat_cash_accounting_to_standard_vat_accrual.html">Switching from VAT Cash Accounting To Standard VAT (accrual)</a></li>
+                                            <li><a href="./how_to_set_or_re_set_your_business_start_date.html">How to set or re-set your business start date</a></li>
+                                            <li><a href="./reclaiming_forgotten_vat.html">Reclaiming forgotten VAT</a></li>
+                                            <li><a href="./vat_apportioning_for_personal_use.html">VAT Apportioning for Personal Use</a></li>
+                                            <li><a href="./ec_acquisitions_vat_boxes_2_and_4.html">EC Acquisitions VAT Boxes 2 and 4</a></li>
+                                            <li><a href="./vat_corrections.html">VAT Corrections</a></li>
+                                            <li><a href="./vat126_claim_for_refund_by_local_authorities.html">VAT126 Claim for Refund by Local Authorities</a></li>
+                                            <li><a href="./vat_road_fuel_scale_charge.html">VAT Road Fuel Scale Charge</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="group-4" type="checkbox" hidden />
+                                <label for="group-4"><span class="fa fa-angle-right">➤</span>Business Processes</label>
+                                <ul class="group-list">
+                                    <li><a href="./record_a_sale.html">Record a sale</a></li>
+                                    <li><a href="./record_an_expense.html">Record an expense</a></li>
+                                    <li><a href="./record_a_purchase_of_stock_for_resale.html">Record a purchase of stock for resale</a></li>
+                                    <li><a href="./record_a_purchase_of_equipment_for_use_in_the_business.html">Record a purchase of equipment for use in the business</a></li>
+                                    <li><a href="./record_a_purchase_of_raw_materials_for_manufacturing.html">Record a purchase of raw materials for manufacturing</a></li>
+                                    <li><a href="./record_a_receipt_of_money_from_a_customer.html">Record a receipt of money from a customer</a></li>
+                                    <li><a href="./paying_a_bill.html">Paying a bill</a></li>
+                                    <li><a href="./record_a_sales_refund.html">Record a sales refund</a></li>
+                                    <li><a href="./record_a_purchase_refund.html">Record a purchase refund</a></li>
+                                    <li><a href="./record_interest_received.html">Record interest received</a></li>
+                                    <li><a href="./record_paye.html">Record PAYE</a></li>
+                                    <li><a href="./paying_yourself_if_self_employed.html">Paying yourself if self-employed</a></li>
+                                    <li><a href="./paying_vat_to_hmrc.html">Paying VAT to HMRC</a></li>
+                                    <li><a href="./recording_a_vat_refund_from_hmrc.html">Recording a VAT refund from HMRC</a></li>
+                                    <li><a href="./paying_corporation_tax_to_hmrc.html">Paying Corporation Tax to HMRC</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="group-5" type="checkbox" hidden />
+                                <label for="group-5"><span class="fa fa-angle-right">➤</span>Customers</label>
+                                <ul class="group-list">
+                                    <li><a href="./add_a_new_customer.html">Add a new customer</a></li>
+                                    <li><a href="./add_a_contact.html">Add a contact</a></li>
+                                    <li><a href="./remove_a_customer.html">Remove a customer</a></li>
+                                    <li><a href="./design_an_invoice_quote_credit_note_template.html">Design an Invoice-Quote-Credit Note Template</a></li>
+                                    <li><a href="./produce_an_invoice.html">Produce an invoice</a></li>
+                                    <li><a href="./produce_a_quotation.html">Produce a quotation</a></li>
+                                    <li><a href="./produce_a_credit_note.html">Produce a credit note</a></li>
+                                    <li><a href="./record_a_receipt_of_money_from_a_customer.html?rhtocid=5.0_8#bc-1">Record a receipt of money from a customer</a></li>
+                                    <li><a href="./handling_part_payments.html">Handling part payments from a customer</a></li>
+                                    <li><a href="./credit_note_numbers.html">Setup or edit incrementing invoice, quotation and credit note numbers</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="group-6" type="checkbox" hidden />
+                                <label for="group-6"><span class="fa fa-angle-right">➤</span>Suppliers</label>
+                                <ul class="group-list">
+                                    <li><a href="./add_a_supplier.html">Add a supplier</a></li>
+                                    <li><a href="./add_a_supplier_contact.html">Add a supplier contact</a></li>
+                                    <li><a href="./remove_a_supplier.html">Remove a supplier</a></li>
+                                    <li><a href="./design_a_purchase_order.html">Design a purchase order</a></li>
+                                    <li><a href="./paying_a_bill.html">Pay a supplier</a></li>
+                                    <li><a href="./credit_note_numbers.html">Setup or edit incrementing purchase order numbers</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="group-7" type="checkbox" hidden />
+                                <label for="group-7"><span class="fa fa-angle-right">➤</span>VAT & MTD</label>
+                                <ul class="group-list">
+                                    <li><a href="./making_tax_digital.html">Making Tax Digital</a></li>
+                                    <li><a href="./complete_a_vat_return_standard_vat.html">Complete a VAT return (Standard or Cash Accounting)</a></li>
+                                    <li><a href="./complete_a_vat_return_flat_rate_scheme.html">Complete a VAT return (Flat Rate Scheme)</a></li>
+                                    <li><a href="./online_vat_submission.html">Submitting a VAT Return Online</a></li>
+                                    <li><a href="./online_vat_submission_history.html">Online VAT Submission History</a></li>
+                                    <li><a href="./ec_sales_list.html">How to compile an EC Sales List</a></li>
+
+                                    <li><a href="./handling_part_payments_with_vat_cash_accounting_scheme.html">VAT 
+                                Cash Accounting for Part Paid Invoices</a></li>
+                                <li><a href="./postponed_vat_accounting.html">Postponed VAT Accounting</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="group-8" type="checkbox" hidden />
+                                <label for="group-8"><span class="fa fa-angle-right">➤</span>Miscellaneous</label>
+                                <ul class="group-list">
+                                    <li><a href="./bank_reconciliation.html">Bank Reconciliation</a></li>
+                                    <li><a href="./recording_a_split_transaction.html">Recording a Split transaction</a></li>
+                                    <li><a href="./creditors.html">Reviewing all debtors and creditors</a></li>
+                                    <li><a href="./how_to_use_multi_currency.html">How to use Multi Currency</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="group-9" type="checkbox" hidden />
+                                <label for="group-9"><span class="fa fa-angle-right">➤</span>Application Reference Guide</label>
+                                <ul class="group-list">
+                                    <li>
+                                        <input id="sub-group-14" type="checkbox" hidden />
+                                        <label for="sub-group-14"><span class="fa fa-angle-right">➤</span>Main Components</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./chart_of_accounts.html">Chart Of Accounts</a></li>
+                                            <li><a href="./customer_records.html">Customer Records</a></li>
+                                            <li><a href="./customer_table.html">Customer Table</a></li>
+                                            <li><a href="./dashboard.html">Dashboard</a></li>
+                                            <li><a href="./easy_steps.html">Easy Steps</a></li>
+                                            <li><a href="./journal_transactions.html">Journal Transactions</a></li>
+                                            <li><a href="./nominal_ledger.html">Nominal Ledger</a></li>
+                                            <li><a href="./purchase_order_transactions.html">Purchase Order Transactions</a></li>
+                                            <li><a href="./purchase_transactions.html">Purchase Transactions</a></li>
+                                            <li><a href="./quotations.html">Quotations</a></li>
+                                            <li><a href="./sales_transactions.html">Sales Transactions</a></li>
+                                            <li><a href="./supplier_records.html">Supplier Records</a></li>
+                                            <li><a href="./supplier_table.html">Supplier Table</a></li>
+                                            <li><a href="./templates.html">Templates</a></li>
+                                            <li><a href="./transfer_transactions.html">Transfer Transactions</a></li>
+                                            <li><a href="./vat_return.html">VAT Return</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-15" type="checkbox" hidden />
+                                        <label for="sub-group-15"><span class="fa fa-angle-right">➤</span>Sub Components</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./automated_purchases.html">Automated Purchases</a></li>
+                                            <li><a href="./automated_sales.html">Automated Sales</a></li>
+                                            <li><a href="./automated_transfers.html">Automated Transfers</a></li>
+                                            <li><a href="./calculator.html">Calculator</a></li>
+                                            <li><a href="./change_company.html">Change Company</a></li>
+                                            <li><a href="./check_for_upgrade.html">Check for Upgrade</a></li>
+                                            <li><a href="./configuration.html">Configuration</a></li>
+                                            <li><a href="./configure_automated_transactions.html">Configure Automated Transactions</a></li>
+                                            <li><a href="./custom_fields.html">Custom Fields</a></li>
+                                            <li><a href="./desk_diary.html">Desk Diary</a></li>
+                                            <li><a href="./document_editor.html">Document Editor</a></li>
+                                            <li><a href="./error_reporting.html">Error Reporting</a></li>
+                                            <li><a href="./importing_data.html">Importing Data</a></li>
+                                            <li><a href="./language_selection.html">Language Selection</a></li>
+                                            <li><a href="./local_backup_settings.html">Local Backup Settings</a></li>
+                                            <li><a href="./make_a_backup.html">Make a Backup</a></li>
+                                            <li><a href="./mobile_app_settings.html">Mobile App Settings</a></li>
+                                            <li><a href="./online_backup_settings.html">Online Backup Settings</a></li>
+                                            <li><a href="./reset_templates.html">Reset Templates</a></li>
+                                            <li><a href="./restore_a_backup.html">Restore a Backup</a></li>
+                                            <li><a href="./set_licence_wizard.html">Set Licence Wizard</a></li>
+                                            <li><a href="./show_sales_documents.html">Show Sales Documents</a></li>
+                                            <li><a href="./show_quote_documents.html">Show Quote Documents</a></li>
+                                            <li><a href="./show_purchase_order_documents.html">Show Purchase Order Documents</a></li>
+                                            <li><a href="./standard_reports.html">Standard Reports</a></li>
+                                            <li><a href="./templates_builder.html">Templates Builder</a></li>
+                                            <li><a href="./template_editor.html">Template Editor</a></li>
+                                            <li><a href="./template_purchase.html">Template Purchases</a></li>
+                                            <li><a href="./template_sales.html">Template Sales</a></li>
+                                            <li><a href="./template_transfers.html">Template Transfers</a></li>
+                                            <li><a href="./vat_configuration.html">VAT Configuration</a></li>
+                                            <li><a href="./vat_setup.html">VAT Setup</a></li>
+                                            <li><a href="./year_closing.html">Year Closing</a></li>
+                                            <li><a href="./your_business.html">Your Business</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-16" type="checkbox" hidden />
+                                        <label for="sub-group-16"><span class="fa fa-angle-right">➤</span>Add-on Components</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./mobile_app.html">Accountz Mobile App</a></li>
+                                            <li><a href="./online_backup.html">Accountz Online Backup and Recovery</a></li>
+                                            <li><a href="./budgeting_forecasting.html">Budgeting & Forecasting</a></li>
+                                            <li><a href="./cost_centres.html">Cost Centres</a></li>
+                                            <li><a href="./management_reports.html">Management Reports</a></li>
+                                            <li><a href="./multi_currency.html">Multi Currency</a></li>
+                                            <li><a href="./payroll.html">Payroll</a></li>
+                                            <li><a href="./product_management.html">Product Management</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="sub-group-17" type="checkbox" hidden />
+                                        <label for="sub-group-17"><span class="fa fa-angle-right">➤</span>Other Links</label>
+                                        <ul class="sub-group-list">
+                                            <li><a href="./reference.html">Reference</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+            </aside>
+            <div class="main-content col-xs-12 col-md-8">
+                        <div id="TOC" class="toc-wrapper">
+                <div class="well toc">
+                <ul>
+                    <li class="nav-header">Table of Contents</li>
+                </ul>
+                <ul>
+                <li><a href="#the-dashboard">The Dashboard</a>
+                <ul>
+                <li><a href="#dashboard-overview">Dashboard Overview</a>
+                <ul>
+                <li><a href="#add-dashlets">Add dashlets</a></li>
+                <li><a href="#remove-dashlets">Remove dashlets</a></li>
+                <li><a href="#rearrange-dashlets">Rearrange dashlets</a></li>
+                </ul></li>
+                <li><a href="#the-dashlets">The Dashlets</a>
+                <ul>
+                <li><a href="#account-balances">Account Balances</a></li>
+                <li><a href="#invoices-and-bills">Invoices and Bills</a></li>
+                <li><a href="#profit-and-loss">Profit and Loss</a></li>
+                <li><a href="#vat-liability">VAT Liability</a></li>
+                <li><a href="#income-by-account">Income by Account</a></li>
+                <li><a href="#spending-by-account">Spending by Account</a></li>
+                <li><a href="#look-ahead">Look Ahead</a></li>
+                <li><a href="#actuals">Actuals</a></li>
+                </ul></li>
+                </ul></li>
+                </ul>
+                </div>
+            </div>
+                    
+            <h1 id="the-dashboard">The Dashboard</h1>
+            <p><em>Only available in the Startup Kit, Startup Kit VAT and Business Suite versions of Business Accountz</em></p>
+            <h2 id="dashboard-overview">Dashboard Overview</h2>
+            <figure>
+            <img src="images/screenshot_dashboard_main.gif" alt="Accounting Software screenshot dashboard main" /><figcaption aria-hidden="true">Accounting Software screenshot dashboard main</figcaption>
+            </figure>
+            <p>The Dashboard component displays an overview of key financial information relating to your company’s performance.</p>
+            <p>It comprises up to 8 customisable information panels or ‘dashlets’ which each provide an insight into certain aspects of your finances:</p>
+            <ul>
+            <li><a href="#account-balances">Account Balances</a></li>
+            <li><a href="#invoices-and-bills">Invoices and Bills</a></li>
+            <li><a href="#profit-and-loss">Profit and Loss</a></li>
+            <li><a href="#vat-liability">VAT Liability</a></li>
+            <li><a href="#income-by-account">Income by Account</a></li>
+            <li><a href="#spending-by-account">Spending by Account</a></li>
+            <li><a href="#look-ahead">Look Ahead</a></li>
+            <li><a href="#actuals">Actuals</a></li>
+            </ul>
+            <p>The information that most dashlets display is configurable. To edit, click on the dashlet to access its configuration screen.</p>
+            <h3 id="add-dashlets">Add dashlets</h3>
+            <p>Dashlets can be added to the component by clicking the ‘Add dashlet’ button (see below) in the top right of the screen (if this button is not visible, it means all available dashlets are already displayed).</p>
+            <figure>
+            <img src="images/screenshot_add_dashlet_button.png" alt="Accounting Software screenshot add dashlet button" /><figcaption aria-hidden="true">Accounting Software screenshot add dashlet button</figcaption>
+            </figure>
+            <p>When you click the ‘Add dashlet’ button, a menu will appear(see below) displaying all available (i.e. currently hidden) dashlets.</p>
+            <figure>
+            <img src="images/dashlet_add_button_menu.gif" alt="Accounting Software dashlet add button menu" /><figcaption aria-hidden="true">Accounting Software dashlet add button menu</figcaption>
+            </figure>
+            <p>To add a dashlet, simply select it from this list.</p>
+            <h3 id="remove-dashlets">Remove dashlets</h3>
+            <p>Dashlets can be removed from the dashboard by clicking the ‘Remove Dashlet’ button (shaped like an ‘X’) in the top right of the panel:</p>
+            <figure>
+            <img src="images/screenshot_remove_dashlet.gif" alt="Accounting Software screenshot remove dashlet" /><figcaption aria-hidden="true">Accounting Software screenshot remove dashlet</figcaption>
+            </figure>
+            <h3 id="rearrange-dashlets">Rearrange dashlets</h3>
+            <figure>
+            <img src="images/screenshot_drag_dashlet.png" alt="Accounting Software screenshot drag dashlet" /><figcaption aria-hidden="true">Accounting Software screenshot drag dashlet</figcaption>
+            </figure>
+            <p>Dashlets can be rearranged as required by left click/dragging and dropping the (already visible) dashlet into the desired position. In the example above the Invoices and Bills dashlet is being dragged/dropped into the bottom left corner of the component.</p>
+            <h2 id="the-dashlets">The Dashlets</h2>
+            <h3 id="account-balances">Account Balances</h3>
+            <figure>
+            <img src="images/Screenshot_balances_dashlet_thumbnail.png" alt="Accounting Software Screenshot balances dashlet thumbnail" /><figcaption aria-hidden="true">Accounting Software Screenshot balances dashlet thumbnail</figcaption>
+            </figure>
+            <p>The Account Balances dashlet (as visible in the main dashboard, see image above) displays the current balances for the accounts selected (up to a maximum of 6 accounts). To view your Account Balances in greater detail, click on the dashlet to select it.</p>
+            <figure>
+            <img src="images/Screenshot_balances_dashlet1.png" alt="Accounting Software Screenshot balances dashlet 1" /><figcaption aria-hidden="true">Accounting Software Screenshot balances dashlet 1</figcaption>
+            </figure>
+            <p>This launches the dashlet’s configuration screen.</p>
+            <p>This screen (see above) displays a list of all bank, loan, cash and credit card accounts in the system and their current balances.</p>
+            <p>Within this window we can select which accounts are visible in the main dashboard thumbnail, plus click a button to examine any of the accounts listed here in further detail in the <a href="chart_of_accounts.html">Chart of Accounts</a> component.</p>
+            <p>The following values, buttons and icons are visible within the Account Balances Dashlet:</p>
+            <ul>
+            <li><img src="images/button_return_to_dashboard.gif" alt="Accounting Software button return to dashboard" /> <strong>Return to main dashboard screen</strong> - Clicking this button returns you to the main dashboard</li>
+            <li><img src="images/button_balances_dashlet_total.png" alt="Accounting Software button balances dashlet total" /> <strong>Account Totals</strong> - Displays the total for all accounts visible in the dashlet</li>
+            <li><img src="images/button_balances_dashlet_tickbox.png" alt="Accounting Software button balances dashlet tickbox" /> <strong>Account Visibility Checkbox</strong> - Tick this box to make the account visible in the main Dashboard thumbnail.</li>
+            <li><img src="images/button_balances_dashlet_account_name.png" alt="Accounting Software button balances dashlet account name" /> <strong>Account Name</strong> - Displays the account name.</li>
+            <li><img src="images/button_balances_dashlet_account_type.png" alt="Accounting Software button balances dashlet account type" /> <strong>Account Type Icon</strong> - Displays the account type (bank, loan, cash or credit card).</li>
+            <li><img src="images/button_balances_dashlet_account_warning.gif" alt="Accounting Software Dashlet Account Warning" /> <strong>Account Negative Balance Warning</strong> - The yellow warning icon appears when your account balance falls below zero. Click the icon to go to the <a href="#look-ahead">Look Ahead</a> Dashlet.</li>
+            <li><img src="images/button_balances_dashlet_account_total.png" alt="Accounting Software button balances dashlet account total" /> <strong>Account Total</strong> - Displays the current total for the account in focus.</li>
+            <li><img src="images/image1.gif" alt="Accounting Software Dashboard Rearrange Accounts" /> <strong>Rearrange Accounts Icon</strong> - Drag and drop this icon to change the order of accounts in the dashlet.</li>
+            <li><img src="images/button_balances_dashlet_go_to_account_icon.png" alt="Accounting Software Dashboard Go To Account" /> <strong>Go To Account</strong> - Clicking this button locates the account in focus in the <a href="chart_of_accounts.html">Chart of Accounts</a> component.</li>
+            <li><img src="images/button_balances_dashlet_account_name.png" alt="Accounting Software Dashlet Account Name" /> <strong>Account Name</strong> - Displays the account name.</li>
+            </ul>
+            <h3 id="invoices-and-bills">Invoices and Bills</h3>
+            <figure>
+            <img src="images/Screenshot_invoices_dashlet_thumbnail.png" alt="Accounting Software Screenshot invoices dashlet thumbnail" /><figcaption aria-hidden="true">Accounting Software Screenshot invoices dashlet thumbnail</figcaption>
+            </figure>
+            <p>The Invoices and Bills dashlet (as visible in the main dashboard, see image above) displays the number of customer invoices outstanding and the total amount you are owed, plus the number of supplier bills outstanding and the total amount you owe them.</p>
+            <p>The dashlet contains the following data fields:</p>
+            <ul>
+            <li><strong>Number of unpaid invoices</strong> - The total number of invoices which are marked as unpaid in the system (i.e. sale transactions using the ‘invoices unpaid’ account in the ‘To Account’ field for which the ‘Paid’ checkbox is unticked)</li>
+            <li><strong>Amount you are owed</strong> - The total amount you are owed (i.e. the sum total of the unpaid invoices listed in the previous field)</li>
+            <li><strong>Number of unpaid bills</strong> - The total number of bills which are marked as unpaid in the system (i.e. purchase transactions using the ‘bills unpaid’ account in the To Account field for which the ‘Paid’ checkbox is unticked)</li>
+            <li><strong>Amount you owe</strong> - The total amount you owe (i.e. the sum total of the unpaid bills listed in the previous field)</li>
+            </ul>
+            <p>To view your invoices and bills in greater detail, click on the dashlet to select it.</p>
+            <figure>
+            <img src="images/screenshot_invoices_bills_dashlet_zoom.png" alt="Accounting Software screenshot invoices bills dashlet zoom" /><figcaption aria-hidden="true">Accounting Software screenshot invoices bills dashlet zoom</figcaption>
+            </figure>
+            <p>This screen comprises two panels which detail all outstanding invoices and bills individually:</p>
+            <ul>
+            <li>Unpaid Invoices (Left Panel)</li>
+            <li>Unpaid Bills (Right Panel)</li>
+            </ul>
+            <h4 id="unpaid-invoices-panel">Unpaid Invoices panel</h4>
+            <p>This panel displays a table containing the following columns/values/clickable links:</p>
+            <ul>
+            <li><strong>Unpaid Invoices Total</strong> - The total amount you are owed</li>
+            <li><strong>Company</strong> - The customer this invoice pertains to (click on this value to access the customer’s record within the <a href="customer_records.html">Customer Records</a> component)</li>
+            <li><strong>Amount</strong> - The amount outstanding for this invoice</li>
+            <li><strong>Invoice No.</strong> - The invoice’s reference number (click on this value to load the invoice in the <a href="document_editor.html">Document Editor</a> component)</li>
+            <li><strong>Date</strong> - The invoice’s tax date</li>
+            </ul>
+            <h4 id="unpaid-bills-panel">Unpaid Bills panel</h4>
+            <p>This panel displays a table containing the following columns/values/clickable links:</p>
+            <ul>
+            <li><strong>Company</strong> - The supplier this bill pertains to, if applicable (click on this to access the supplier’s record within the <a href="supplier_records.html">Supplier Records</a> component)</li>
+            <li><strong>Amount</strong> - The amount outstanding for this invoice</li>
+            <li><strong>Invoice No.</strong> -The bill’s reference number</li>
+            <li><strong>Date</strong> - The bill’s tax date</li>
+            </ul>
+            <h4 id="top-toolbar">Top Toolbar</h4>
+            <p>The top toolbar displays the following buttons/values:</p>
+            <ul>
+            <li><img src="images/button_return_to_dashboard.gif" alt="Accounting Software button return to dashboard" /> <strong>Return to main dashboard screen</strong> - Clicking this button returns you to the main dashboard</li>
+            </ul>
+            <h3 id="profit-and-loss">Profit and Loss</h3>
+            <figure>
+            <img src="images/screenshot_profitandloss_dashlet_thumbnail.png" alt="Accounting Software screenshot profit and loss dashlet thumbnail" /><figcaption aria-hidden="true">Accounting Software screenshot profit and loss dashlet thumbnail</figcaption>
+            </figure>
+            <p>The Profit and Loss dashlet displays a chart showing a weekly, monthly, or quarterly comparison between the current year’s Profit and Loss figures, and previous years’ figures, as set in the dashlet’s configuration screen. N.B. the data presented is based on the calendar year, only.</p>
+            <p>To configure the information displayed in the chart, click on the dashlet to select it.</p>
+            <figure>
+            <img src="images/screenshot_profit_loss_configuration.png" alt="Accounting Software screenshot profit and loss configuration" /><figcaption aria-hidden="true">Accounting Software screenshot profit and loss configuration</figcaption>
+            </figure>
+            <p>This launches the dashlet’s configuration screen.</p>
+            <p>Within this screen you can set which year(s) are included in the chart by ticking/unticking that year’s checkbox (see below).</p>
+            <figure>
+            <img src="images/button_toggle_chart_year.png" alt="Accounting Software button toggle chart year" /><figcaption aria-hidden="true">Accounting Software button toggle chart year</figcaption>
+            </figure>
+            <h4 id="top-toolbar-1">Top Toolbar</h4>
+            <p>The top toolbar displays the following buttons:</p>
+            <ul>
+            <li><img src="images/button_return_to_dashboard.gif" alt="Accounting Software button return to dashboard" /> <strong>Return to main dashboard screen</strong> - Clicking this button returns you to the main dashboard screen</li>
+            <li><img src="images/button_toggle_chart_period.png" alt="Accounting Software button toggle chart period" /> <strong>Toggle Chart Period</strong> - Toggles between Quarters/Months/Weeks for the periods displayed.</li>
+            </ul>
+            <h3 id="vat-liability">VAT Liability</h3>
+            <figure>
+            <img src="images/image2.gif" alt="Accounting Software vat Liability Dashlet" /><figcaption aria-hidden="true">Accounting Software vat Liability Dashlet</figcaption>
+            </figure>
+            <p>N.B. This dashlet is only available in Startup Kit VAT and Business Suite versions of Business Accountz V3.</p>
+            <p>The VAT Liability dashlet thumbnail displays the following values:</p>
+            <ul>
+            <li><strong>VAT to Submit</strong> - The VAT amount owed to HMRC</li>
+            <li><strong>Period</strong> - The current VAT period this amount relates to</li>
+            <li><strong>Days Left to Submit</strong> - The number of days you have to submit your return manually</li>
+            <li><strong>Days Left to Pay (Direct Debit)</strong> - The number of days left to pay the amount outstanding if you use the HMRC online gateway</li>
+            </ul>
+            <p>N.B. For the Days Left to Submit and Days Left to Pay (Direct Debit) values, this can only be calculated based on submissions to HMRC directly from Business Accountz. Clicking the dashlet thumbnail accesses the <a href="vat_return.html">VAT Return</a> component.</p>
+            <h3 id="income-by-account">Income by Account</h3>
+            <figure>
+            <img src="images/screenshot_income_dashlet_thumbnail2.png" alt="Accounting Software screenshot income dashlet" /><figcaption aria-hidden="true">Accounting Software screenshot income dashlet</figcaption>
+            </figure>
+            <p>This dashlet comprises a bar or pie chart (as defined by the user) displaying your income broken down by account, either as a percentage of total income or in units of base currency.</p>
+            <p>To configure the information displayed in the chart, click on the dashlet to select it.</p>
+            <figure>
+            <img src="images/screenshot_income_by_account.png" alt="Accounting Software screenshot income by account" /><figcaption aria-hidden="true">Accounting Software screenshot income by account</figcaption>
+            </figure>
+            <p>Here you can set which accounts are displayed for this panel in the main dashboard component, choose whether the account totals are displayed as a percentage or as base currency, set the chart type (pie or bar chart), and (if required) set a start and/or end date for the chart displayed.</p>
+            <p>The dashlet comprises 3 sections:</p>
+            <ul>
+            <li><strong>Top Toolbar</strong> - Set Date Range/Chart Type/Chart Unit</li>
+            <li><strong>Left Panel</strong> - Select Account(s)/Show Other</li>
+            <li><strong>Right Panel</strong> - The Income By Account Chart</li>
+            </ul>
+            <h4 id="top-toolbar-2">Top Toolbar</h4>
+            <p>This toolbar offers the following buttons/options:</p>
+            <ul>
+            <li><img src="images/button_return_to_dashboard.gif" alt="Accounting Software button return to dashboard" /> <strong>Return to main dashboard screen</strong> - Clicking this button returns you to the main dashboard screen</li>
+            <li><img src="images/button_toggle_chart_unit.gif" alt="Accounting Software button toggle chart unit" /> <strong>Toggle Chart Unit</strong> - Toggles between % and £ (or your base currency) for your account totals.</li>
+            <li><img src="images/button_toggle_chart_type.gif" alt="Accounting Software button toggle chart type" /> or <img src="images/button_toggle_chart_type2.gif" alt="Accounting Software button toggle chart type" /> <strong>Toggle Chart Type</strong> - Toggles between bar and pie chart types.</li>
+            <li><img src="images/button_start_date.gif" alt="Accounting Software button start date" /> <strong>Start Date</strong> - Sets a Start Date for your chart totals</li>
+            <li><img src="images/button_end_date.gif" alt="Accounting Software button end date" /> <strong>End Date</strong> - Sets an End Date for your chart totals</li>
+            </ul>
+            <h4 id="left-panel">Left Panel</h4>
+            <p>The left column(see below) enables you to set which accounts/account groups are visible in the chart. Tick/Untick the relevant account to show/hide it.</p>
+            <p>The ‘Show Other’ checkbox affects how the ‘Various Accounts’ value is calculated(see below for more details).</p>
+            <figure>
+            <img src="images/screenshot_income_by_account_left_panel.png" alt="Accounting Software screenshot income by account left panel" /><figcaption aria-hidden="true">Accounting Software screenshot income by account left panel</figcaption>
+            </figure>
+            <p>If you tick an account group in this list, then the accounts contained within the group are automatically greyed out, and the account group is represented by a single value in the chart (see below).</p>
+            <figure>
+            <img src="images/screenshot_dashboard_income_groups.png" alt="Accounting Software screenshot dashboard income groups" /><figcaption aria-hidden="true">Accounting Software screenshot dashboard income groups</figcaption>
+            </figure>
+            <p>In this example, the ‘Telesales Group’ account group has been ticked, thus automatically unticking the accounts contained within this group, and representing them as a single combined value in the chart.</p>
+            <h4 id="right-panel">Right Panel</h4>
+            <figure>
+            <img src="images/screenshot_bar_chart.png" alt="Accounting Software screenshot bar chart" /><figcaption aria-hidden="true">Accounting Software screenshot bar chart</figcaption>
+            </figure>
+            <p>The right panel comprises the ‘Income By Account’ pie or bar chart itself, displaying your data as set in the previous two sections.</p>
+            <p>The chart also includes an item, entitled ‘Various Accounts’, which combines all accounts which each total less than 1% of total income into a single value.</p>
+            <p><em>N.B. Hovering your mouse over the ‘Various Accounts’ item displays the individual values for the accounts which make up this item (see below).</em></p>
+            <figure>
+            <img src="images/screenshot_various_accounts.png" alt="Accounting Software screenshot various accounts" /><figcaption aria-hidden="true">Accounting Software screenshot various accounts</figcaption>
+            </figure>
+            <p>Please note that when the ‘Show Other’ box is ticked in the left column (see above), the ‘Various Accounts’ value includes all unticked accounts in the ‘Select Account(s)’ column.</p>
+            <p>This is used if you wish to compare certain accounts against the remainder of your income (for example, if you wished to compare your Sales account’s income compared to everything else combined, you would tick ‘Sales’ and ‘Show Other’ and leave everything else unticked).</p>
+            <h3 id="spending-by-account">Spending by Account</h3>
+            <figure>
+            <img src="images/screenshot_income_dashlet_thumbnail.png" alt="Accounting Software screenshot income dashlet thumbnail" /><figcaption aria-hidden="true">Accounting Software screenshot income dashlet thumbnail</figcaption>
+            </figure>
+            <p>Similar to the Income by Account dashlet (see above), this dashlet comprises a bar or pie chart (as defined by the user) displaying your spending broken down by account, either as a percentage of total expenditure or in units of base currency.</p>
+            <p>To configure the information displayed in the chart, click on the dashlet to select it.</p>
+            <figure>
+            <img src="images/screenshot_spending_by_account_configuration.png" alt="Accounting Software screenshot spending by account configuration" /><figcaption aria-hidden="true">Accounting Software screenshot spending by account configuration</figcaption>
+            </figure>
+            <p>Here you can set which accounts are displayed for this panel in the main dashboard component, choose whether the account totals are displayed as a percentage or as base currency, set the chart type (pie or bar chart), and (if required) set a start and/or end date for the chart displayed.</p>
+            <p>The dashlet comprises 3 sections:</p>
+            <ul>
+            <li><strong>Top Toolbar</strong> - Set Date Range/Chart Type/Chart Unit</li>
+            <li><strong>Left Panel</strong> - Select Account(s)/Show Other</li>
+            <li><strong>Right Panel</strong> - The Spending By Account Chart</li>
+            </ul>
+            <h4 id="top-toolbar-3">Top Toolbar</h4>
+            <p>This toolbar offers the following buttons/options:</p>
+            <ul>
+            <li><img src="images/button_return_to_dashboard.gif" alt="Accounting Software button return to dashboard" /> <strong>Return to main dashboard screen</strong> - Clicking this button returns you to the main dashboard screen</li>
+            <li><img src="images/button_toggle_chart_unit.gif" alt="Accounting Software button toggle chart unit" /> <strong>Toggle Chart Unit</strong> - Toggles between % and £ (or your base currency) for your account totals.</li>
+            <li><img src="images/button_toggle_chart_type.gif" alt="Accounting Software button toggle chart type" /> or <img src="images/button_toggle_chart_type2.gif" alt="Accounting Software button toggle chart type" /> <strong>Toggle Chart Type</strong> - Toggles between bar and pie chart types.</li>
+            <li><img src="images/button_start_date.gif" alt="Accounting Software button start date" /> <strong>Start Date</strong> - Sets a Start Date for your chart totals</li>
+            <li><img src="images/button_end_date.gif" alt="Accounting Software button end date" /> <strong>End Date</strong> - Sets an End Date for your chart totals</li>
+            </ul>
+            <h4 id="left-panel-1">Left Panel</h4>
+            <p>The left column(see below) enables you to set which accounts/account groups are visible in the chart. Tick/Untick the relevant account to show/hide it.</p>
+            <p>The ‘Show Other’ checkbox affects how the ‘Various Accounts’ value is calculated(see below for more details).</p>
+            <figure>
+            <img src="images/screenshot_spending_show_accounts.png" alt="Accounting Software screenshot spending show accounts" /><figcaption aria-hidden="true">Accounting Software screenshot spending show accounts</figcaption>
+            </figure>
+            <p>If you tick an account group in this list, then the accounts contained within the group are automatically greyed out, and the account group is represented by a single value in the chart (see below).</p>
+            <figure>
+            <img src="images/screenshot_spending_account_group_ticked.png" alt="Accounting Software screenshot spending account group ticked" /><figcaption aria-hidden="true">Accounting Software screenshot spending account group ticked</figcaption>
+            </figure>
+            <p>In this example, the ‘Employees Group’ account group has been ticked, thus automatically unticking the accounts contained within the group, and representing them as a single combined value in the chart.</p>
+            <h4 id="right-panel-1">Right Panel</h4>
+            <figure>
+            <img src="images/screenshot_spending_pie_chart.png" alt="Accounting Software screenshot spending pie chart" /><figcaption aria-hidden="true">Accounting Software screenshot spending pie chart</figcaption>
+            </figure>
+            <p>The right panel comprises the ‘Spending By Account’ pie or bar chart itself, displaying your data as set in the previous two sections.</p>
+            <p>The chart also includes an item, entitled ‘Various Accounts’, which combines all accounts which each total less than 1% of total expenditure into a single value.</p>
+            <p><em>N.B. Hovering your mouse over the ‘Various Accounts’ item displays the individual values for the accounts which make up this item (see below).</em></p>
+            <figure>
+            <img src="images/screenshot__spending_various_accounts.png" alt="Accounting Software screenshot spending various accounts" /><figcaption aria-hidden="true">Accounting Software screenshot spending various accounts</figcaption>
+            </figure>
+            <p>Please note that when the ‘Show Other’ box is ticked in the left column (see above), the ‘Various Accounts’ value includes all unticked accounts in the ‘Select Account(s)’ column.</p>
+            <p>This is used if you wish to compare certain accounts against the remainder of your expenditure (for example, if you wished to compare your Rent and Rates account’s expenditure compared to everything else combined, you would tick ‘Rent and Rates’ and ‘Show Other’ and leave everything else unticked).</p>
+            <h3 id="look-ahead">Look Ahead</h3>
+            <figure>
+            <img src="images/screenshot_look_ahead_thumbnail.gif" alt="Accounting Software screenshot look ahead thumbnail" /><figcaption aria-hidden="true">Accounting Software screenshot look ahead thumbnail</figcaption>
+            </figure>
+            <p>The Look Ahead dashlet displays a chart showing the forecasted balance for a selected account (or account group) for a defined period, as set in the dashlet’s configuration screen.</p>
+            <p>If your account balance is due to fall below zero (or your overdraft limit), the dashlet will display a warning icon on that date.</p>
+            <p>To configure the information displayed in the chart, click on the dashlet to select it.</p>
+            <figure>
+            <img src="images/screenshot_look_ahead_dashlet1_baz.gif" alt="Accounting Software screenshot look ahead dashlet" /><figcaption aria-hidden="true">Accounting Software screenshot look ahead dashlet</figcaption>
+            </figure>
+            <p>Here you can set which account or account group is displayed for this panel in the main dashboard component (n.b. you can only select one account/account group at a time), choose the forecast period length, plus view an analysis of the transaction/balance data for any point on the chart.</p>
+            <p>The dashlet comprises 3 sections:</p>
+            <ul>
+            <li><strong>Top Toolbar</strong> - Toggle Chart Period</li>
+            <li><strong>Left Panel</strong> - Select Account/Account Group</li>
+            <li><strong>Right Panel</strong> - The Look Ahead Chart</li>
+            </ul>
+            <h4 id="top-toolbar-4">Top Toolbar</h4>
+            <p>The top toolbar displays the following buttons:</p>
+            <ul>
+            <li><img src="images/button_return_to_dashboard.gif" alt="Accounting Software button return to dashboard" /> <strong>Return to main dashboard screen</strong> - Clicking this button returns you to the main dashboard screen</li>
+            <li><img src="images/button_toggle_chart_forecast_period.gif" alt="Accounting Software button toggle chart forecast period" /> <strong>Toggle Chart Period</strong> - Toggles between 31 Days/60 Days/1 Year for the forecasted period displayed.</li>
+            </ul>
+            <h4 id="left-panel-2">Left Panel</h4>
+            <p>The left column (see below) enables you to set which account/account group is visible in the chart (n.b. only accounts which have transactions/automated transactions entered against them will appear in this list).  Tick the relevant account or account group to select it.</p>
+            <figure>
+            <img src="images/screenshot_look_ahead_dashlet2_baz.gif" alt="Accounting Software screenshot look ahead dashlet 2" /><figcaption aria-hidden="true">Accounting Software screenshot look ahead dashlet 2</figcaption>
+            </figure>
+            <h4 id="right-panel-2">Right Panel</h4>
+            <figure>
+            <img src="images/screenshot_look_ahead_dashlet4_baz.gif" alt="Accounting Software screenshot look ahead dashlet 4" /><figcaption aria-hidden="true">Accounting Software screenshot look ahead dashlet 4</figcaption>
+            </figure>
+            <p>The right panel comprises the ‘Look Ahead’ chart itself, displaying your data as set in the previous two sections.</p>
+            <p>The ‘X’ axis displays the date and the ‘Y’ axis displays account balance.</p>
+            <p><em>N.B. Hovering your mouse over any date point on the chart (see below) displays transaction and balance data for this date for the account/account group selected (click ‘X’ to close this box).</em></p>
+            <figure>
+            <img src="images/screenshot_look_ahead_dashlet3_baz.gif" alt="Accounting Software screenshot look ahead dashlet 3" /><figcaption aria-hidden="true">Accounting Software screenshot look ahead dashlet 3</figcaption>
+            </figure>
+            <h3 id="actuals">Actuals</h3>
+            <figure>
+            <img src="images/screenshot_actuals_thumbnail_baz.gif" alt="Accounting Software screenshot actuals thumbnail baz" /><figcaption aria-hidden="true">Accounting Software screenshot actuals thumbnail baz</figcaption>
+            </figure>
+            <p>The Actuals dashlet shows a comparison of spending (or income) for a particular account or account group. This is displayed on a weekly, monthly or quarterly basis, and also shows a comparison between the current and previous years’ figures.</p>
+            <p>Each point in the chart represents the total spending (or income) for the account/account group for that week/month/quarter.</p>
+            <p>To configure the information displayed in the chart, click on the dashlet to select it.</p>
+            <figure>
+            <img src="images/screenshot_actuals_dashlet.gif" alt="Accounting Software screenshot actuals dashlet" /><figcaption aria-hidden="true">Accounting Software screenshot actuals dashlet</figcaption>
+            </figure>
+            <p>This launches the dashlet’s configuration screen. This comprises four sections:</p>
+            <h4 id="top-toolbar-5">Top Toolbar</h4>
+            <p>The top toolbar displays the following buttons:</p>
+            <ul>
+            <li><img src="images/button_return_to_dashboard.gif" alt="Accounting Software button return to dashboard" /> <strong>Return to main dashboard screen</strong> - Clicking this button returns you to the main dashboard screen</li>
+            <li><img src="images/button_toggle_chart_period.png" alt="Accounting Software button toggle chart period" /> <strong>Toggle Chart Period</strong> - Toggles between Quarters/Months/Weeks for the periods displayed.</li>
+            </ul>
+            <h4 id="left-toolbar">Left Toolbar</h4>
+            <p>Here you can set which account or account group is displayed in the chart (tick the relevant checkbox to select it).</p>
+            <figure>
+            <img src="images/screenshot_actuals_selector.gif" alt="Accounting Software screenshot actuals selector" /><figcaption aria-hidden="true">Accounting Software screenshot actuals selector</figcaption>
+            </figure>
+            <h4 id="right-toolbar">Right toolbar</h4>
+            <p>Here you can set which year(s) are included in the chart by ticking/unticking that year’s checkbox (see below).</p>
+            <figure>
+            <img src="images/button_toggle_chart_year.png" alt="Accounting Software button toggle chart year" /><figcaption aria-hidden="true">Accounting Software button toggle chart year</figcaption>
+            </figure>
+            <h4 id="chart">Chart</h4>
+            <p><img src="images/screenshot_actuals_chart.gif" alt="Accounting Software screenshot actuals chart" />  </p>
+            <p>This section displays the chart (using the currently defined settings, see above) as it will appear in the dashboard thumbnail.</p>
+                    </div>
+    </div><!-- End of page-wrap on nav.snip.html -->
+  </main>
+  <script type="text/javascript">
+
+    // Adding 'scrollTop' elements to document 
+    var els = document.querySelectorAll('h2, h3');
+    var main = document.querySelector('.content');
+    var lastChild = document.querySelector('.main-content').lastChild;
+
+    function createScrollToTopBtn() {
+        var span = document.createElement("span");
+        var p = document.createElement("p");
+
+        span.className = "goToTheTop";
+        span.innerText = "Top";
+        span.onclick = function() {
+                scrollTo(0, 1000);
+            }
+        p.appendChild(span);
+        return p;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var pH = document.documentElement.clientHeight;
+        var mH = main.offsetHeight;
+
+        if(pH < mH) {
+            var i;
+            for (i = 1; i < els.length; i++) {
+                els[i].parentNode.insertBefore(createScrollToTopBtn(), els[i]);
+            }
+
+            insertAfter(createScrollToTopBtn(), lastChild);
+        }
+    });
+    
+    // Swapping TOC after <h1>
+    var toc = document.querySelector('div.toc-wrapper');
+    var header = document.querySelector('h1');
+    if(header) {
+        insertAfter(toc, header);
+
+        // Adding data-label attr to <h1>
+        var headerText = header.innerText;
+        header.setAttribute("data-label", headerText);
+    }
+
+    // Removal toc if empty
+    var toc = document.querySelector('#TOC');
+    var li = document.querySelectorAll('.toc ul:nth-child(2) li');
+    if(li.length < 2) { 
+        toc.parentNode.removeChild(toc); 
+    }
+
+    // Wrapping iframes in div.videoWrapper
+    var addedToDocument = false;
+    var wrapper = document.createElement("div");
+    wrapper.className = "videoWrapper";
+    var nodesToWrap = document.querySelectorAll("iframe");
+    var j;
+    for (j = 0; j < nodesToWrap.length; j++) {
+        var node = nodesToWrap[j];
+        if (!addedToDocument) {
+            node.parentNode.insertBefore(wrapper, node);
+            addedToDocument = true;
+        }
+        node.parentNode.removeChild(node);
+        wrapper.appendChild(node);
+    }
+  </script>
+</body>
+</html>
